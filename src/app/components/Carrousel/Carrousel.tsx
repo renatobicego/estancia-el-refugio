@@ -8,9 +8,13 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 const Carrousel = ({
   images,
   withBorder,
+  addPadding,
+  isBgBlack = false,
 }: {
   images: any;
   withBorder: boolean;
+  addPadding: boolean;
+  isBgBlack?: boolean;
 }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
@@ -22,9 +26,9 @@ const Carrousel = ({
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
   return (
-    <div className="flex flex-col items-center w-full border border-white rounded p-4">
+    <div className={`flex flex-col items-center w-full ${withBorder ? "border border-white" : ""} rounded ${addPadding ? "p-4" : "md:p-4"} `}>
       <div className="overflow-hidden w-full" ref={emblaRef}>
-        <div className="flex items-start transition-height py-6">
+        <div className="flex items-start transition-height py-2 md:py-6">
           {images.map((image: any, index: number) => (
             <div
               key={index}
@@ -53,7 +57,7 @@ const Carrousel = ({
           isIconOnly
           radius="full"
           variant="bordered"
-          className="text-white"
+          className={`${isBgBlack ? "text-white" : "text-black/60"}`}
           onPress={scrollPrev}
         >
           <FaArrowLeft />
@@ -62,7 +66,7 @@ const Carrousel = ({
           isIconOnly
           radius="full"
           variant="bordered"
-          className="text-white"
+          className={`${isBgBlack ? "text-white" : "text-black/60"}`}
           onPress={scrollNext}
         >
           <FaArrowRight />

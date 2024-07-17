@@ -3,7 +3,7 @@ import React from "react";
 
 const Production = () => {
   return (
-    <div className="bg-salmon flex flex-col gap-4 text-white 2xl:p-12 w-full rounded">
+    <div className="bg-salmon flex flex-col gap-4 text-white p-6 md:p-8 lg:p-10 2xl:p-12 w-full rounded">
       <h5 className="subtitle">Producción Ganadera y Personal Dedicado</h5>
       <p>
         Esta sección se dedica principalmente a la cría de ganado bovino, con un

@@ -1,9 +1,24 @@
+import Carrousel from "@/app/components/Carrousel/Carrousel";
 import { Image } from "@nextui-org/react";
 import React from "react";
 
 const WeatherLandscapes = () => {
+  const images = [
+    {
+      src: "/images/secciones/elCascoPrincipal/paisaje-nevado.png",
+      alt: "Paisaje nevado",
+      width: 600,
+      height: 450,
+    },
+    {
+      src: "/images/secciones/elCascoPrincipal/paisaje-montania-nevada.png",
+      alt: "Paisaje con montaña nevada",
+      width: 600,
+      height: 450,
+    },
+  ];
   return (
-    <div className="bg-secondary flex flex-col gap-4 text-white 2xl:p-12 w-full rounded">
+    <div className="bg-secondary flex flex-col gap-4 text-white p-6 md:p-8 lg:p-10 2xl:p-12 w-full rounded">
       <h4 className="subtitle">Clima y Paisaje</h4>
       <p>
         El Casco Principal se caracteriza por sus montañas con bosques de lenga
@@ -15,13 +30,13 @@ const WeatherLandscapes = () => {
         parte principal, llegando a 1000 mm en años excepcionales. A pesar de
         estas variaciones, los campos no suelen ser muy nevadores, lo que
         asegura que la nieve no interfiera significativamente con la actividad
-        ganadera. <br /> 
-        El campo cuenta con extensiones de mallines y chacras para el
-        cultivo de alfalfas, todas alimentadas por aguadas naturales y arroyos.
-        La hacienda se maneja en campos de invierno (invernada) y verano
-        (veranada), asegurando un manejo eficiente del ganado.
+        ganadera. <br />
+        El campo cuenta con extensiones de mallines y chacras para el cultivo de
+        alfalfas, todas alimentadas por aguadas naturales y arroyos. La hacienda
+        se maneja en campos de invierno (invernada) y verano (veranada),
+        asegurando un manejo eficiente del ganado.
       </p>
-      <div className="flex gap-2 w-full">
+      <div className="hidden md:flex gap-2 w-full">
         <Image
           src="/images/secciones/elCascoPrincipal/paisaje-nevado.png"
           alt="Paisaje nevado"
@@ -39,6 +54,14 @@ const WeatherLandscapes = () => {
             img: "w-full h-full object-cover",
           }}
           radius="none"
+        />
+      </div>
+      <div className="md:hidden w-full">
+        <Carrousel
+          images={images}
+          addPadding={false}
+          withBorder={false}
+          isBgBlack
         />
       </div>
     </div>

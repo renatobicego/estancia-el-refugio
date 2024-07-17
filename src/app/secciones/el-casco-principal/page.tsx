@@ -14,16 +14,22 @@ export default function Page() {
         rincón de la Patagonia ofrece una experiencia única y auténtica.`,
     images: [
       {
-        src: "elCascoPrincipal/el-casco-principal-portada.jpg",
+        src: "/images/secciones/elCascoPrincipal/el-casco-principal-portada.jpg",
         alt: "Casa de la estancia",
+        width: 4000,
+        height: 2250,
       },
       {
-        src: "elCascoPrincipal/paisaje-el-casco-principal.png",
+        src: "/images/secciones/elCascoPrincipal/paisaje-el-casco-principal.png",
         alt: "Paisaje de montañas",
+        width: 1099,
+        height: 6991
       },
       {
-        src: "elCascoPrincipal/vaca-laguna.png",
+        src: "/images/secciones/elCascoPrincipal/vaca-laguna.png",
         alt: "Vaca y laguna",
+        width: 946,
+        height: 643
       },
     ],
   };

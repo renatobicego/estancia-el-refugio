@@ -1,6 +1,7 @@
 import BreadcrumbsClient from "@/app/components/BreadcrumbsClient/BreadcrumbsClient";
 import TitlePhoto from "../TitlePhoto";
 import { Button, Link } from "@nextui-org/react";
+import Infraestructure from "./Infraestructure";
 
 export default function Page() {
   const titlePhotoData = {
@@ -12,16 +13,22 @@ export default function Page() {
     proporcionando recursos hídricos esenciales.`,
     images: [
       {
-        src: "laSerena/paisaje-montania.jpg",
-        alt: "Paisaje montañoso",
+        src: "/images/secciones/sanRoman/vacas.jpg",
+        alt: "Vacas en campo",
+        width: 1296,
+        height: 976,
       },
       {
-        src: "laSerena/ovejas-en-corral.jpg",
-        alt: "Ovejas en corral",
+        src: "/images/secciones/sanRoman/paisaje-verde.jpg",
+        alt: "Paisaje montañoso verde",
+        width: 1296,
+        height: 976,
       },
       {
-        src: "laSerena/la-serena-portada.jpg",
-        alt: "Paisaje con árbol",
+        src: "/images/secciones/sanRoman/san-roman-portada.jpg",
+        alt: "San Roman, laguna con vacas",
+        width: 3920,
+        height: 2204,
       },
     ],
   };
@@ -39,6 +46,7 @@ export default function Page() {
         ]}
       />
       <TitlePhoto data={titlePhotoData} />
+      <Infraestructure />
 
       <h5 className="subtitle lg:max-w-[60%]">
         Descubra todos los detalles y oportunidades únicas de nuestra propiedad.

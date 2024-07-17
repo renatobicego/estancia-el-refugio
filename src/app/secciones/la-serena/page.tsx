@@ -13,16 +13,22 @@ export default function Page() {
     gestión eficiente y sostenible del ganado ovino durante todo el año.`,
     images: [
       {
-        src: "laSerena/paisaje-montania.jpg",
+        src: "/images/secciones/laSerena/paisaje-montania.jpg",
         alt: "Paisaje montañoso",
+        width: 4034,
+        height: 3024,
       },
       {
-        src: "laSerena/ovejas-en-corral.jpg",
+        src: "/images/secciones/laSerena/ovejas-en-corral.jpg",
         alt: "Ovejas en corral",
+        width: 4034,
+        height: 3024,
       },
       {
-        src: "laSerena/la-serena-portada.jpg",
+        src: "/images/secciones/laSerena/la-serena-portada.jpg",
         alt: "Paisaje con árbol",
+        width: 4034,
+        height: 3024,
       },
     ],
   };

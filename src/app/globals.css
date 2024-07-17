@@ -10,7 +10,7 @@ body {
 
 @layer utilities {
   p {
-    @apply max-md:text-sm 2xl:text-lg
+    @apply max-md:text-sm max-md:leading-6 2xl:text-lg
   }
 
   h1, h2 {
